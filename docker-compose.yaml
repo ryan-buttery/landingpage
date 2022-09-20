@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  WebServer:
+    image: httpd:latest
+    restart: unless-stopped
+    ports:
+      - 80:80
+    volumes:
+      - ./public-html:/usr/local/apache2/htdocs/
