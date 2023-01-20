@@ -8,6 +8,9 @@ $colour3: hsla(202, 70%, 26%, 1);
 $colour4: hsla(196, 39%, 75%, 1);
 $colour5: hsla(191, 96%, 48%, 1);
 $colour6: white;
+body {
+    background-color: $colour4;
+}
 .bg-dark {
     background-color: $colour1!important;
 }
@@ -30,6 +33,7 @@ $colour6: white;
     border-color: $colour1;
 }
 .hero-banner {
+    margin-top: 5em;
     background-color: $colour2;
     background: url($heroimg) no-repeat center center/cover;
     /* height: 300px; */
