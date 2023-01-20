@@ -11,20 +11,21 @@
 }
 
 .btn-primary {
-  background-color: hsl(191deg, 96%, 48%);
+  background-color: transparent;
   font-family: "Source Sans Pro", sans-serif;
   color: white;
-  border-color: hsl(191deg, 96%, 48%);
+  border-color: white;
 }
 
 .btn-primary:hover {
-  background-color: hsl(202deg, 70%, 26%);
+  background-color: hsl(208deg, 96%, 7%);
   font-family: "Source Sans Pro", sans-serif;
   color: white;
-  border-color: hsl(202deg, 70%, 26%);
+  border-color: hsl(208deg, 96%, 7%);
 }
 
 .hero-banner {
+  background-color: hsl(202deg, 89%, 51%);
   background: url("../images/hero.jpg") no-repeat center center/cover;
   /* height: 300px; */
   font-family: "Source Sans Pro", sans-serif;

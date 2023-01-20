@@ -18,18 +18,19 @@ $colour6: white;
     }
 }
 .btn-primary {
-    background-color: $colour5;
+    background-color: transparent;
     font-family: $font;
     color: $colour6;
-    border-color: $colour5;
+    border-color: $colour6;
 }
 .btn-primary:hover {
-    background-color: $colour3;
+    background-color: $colour1;
     font-family: $font;
     color: $colour6;
-    border-color: $colour3;
+    border-color: $colour1;
 }
 .hero-banner {
+    background-color: $colour2;
     background: url($heroimg) no-repeat center center/cover;
     /* height: 300px; */
     font-family: $font;
