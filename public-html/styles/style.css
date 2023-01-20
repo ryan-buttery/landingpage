@@ -1,14 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+.btn-primary {
+  background-color: hsl(191deg, 96%, 48%);
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  border-color: hsl(191deg, 96%, 48%);
+}
+
+.btn-primary:hover {
+  background-color: hsl(202deg, 70%, 26%);
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  border-color: hsl(202deg, 70%, 26%);
+}
+
 .hero-banner {
   background: url("../images/hero.jpg") no-repeat center center/cover;
   /* height: 300px; */
   font-family: "Source Sans Pro", sans-serif;
+  color: white;
 }
 .hero-banner .display-4 {
+  color: white;
   font-weight: 700;
 }
 .hero-banner .lead .my-4 {
   font-weight: 400;
 }
-
-/*# sourceMappingURL=style.css.map */
+.hero-banner hr {
+  border-top: 1px solid white;
+}/*# sourceMappingURL=style.css.map */
