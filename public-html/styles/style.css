@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+.bg-dark {
+  background-color: hsl(208deg, 96%, 7%) !important;
+}
+
+.bg-secondary-dark {
+  background-color: hsl(202deg, 70%, 26%);
+}
+.bg-secondary-dark a {
+  color: white;
+}
+
 .btn-primary {
   background-color: hsl(191deg, 96%, 48%);
   font-family: "Source Sans Pro", sans-serif;
