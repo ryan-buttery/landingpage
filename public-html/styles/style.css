@@ -18,8 +18,9 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
 }
-.navbar .navbar-brand {
-  font-weight: 700;
+.navbar .navbar-brand img {
+  width: 3rem;
+  height: 3rem;
 }
 
 .hero-banner {
