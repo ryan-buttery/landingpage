@@ -3,8 +3,9 @@ $heroimg: '../images/hero.jpg';
 $font: 'Source Sans Pro', sans-serif;
 
 $colour1: hsla(208, 96%, 7%, 1);
+$colour1-T: hsla(208, 96%, 7%, 0.5);
 $colour2: hsla(202, 89%, 51%, 1);
-$colour2-T: hsla(202, 89%, 51%, 0.7);
+$colour2-T: hsla(202, 89%, 51%, 0.65);
 $colour3: hsla(202, 70%, 26%, 1);
 $colour4: hsla(196, 39%, 75%, 1);
 $colour5: hsla(191, 96%, 48%, 1);
@@ -55,10 +56,10 @@ body {
     }
 
     .btn-primary:hover {
-        background-color: $colour1;
+        background-color: $colour2;
         font-family: $font;
         color: $colour6;
-        border-color: $colour1;
+        border-color: $colour6;
     }
 
     .display-4 {
