@@ -58,12 +58,16 @@ body {
 }
 
 .card-container {
-  color: hsl(208deg, 96%, 7%);
+  color: white;
   font-family: "Source Sans Pro", sans-serif;
 }
 .card-container .card {
   margin-bottom: 1rem;
+  background-color: hsl(208deg, 96%, 7%);
 }
 .card-container .card-title {
   font-weight: 700;
+}
+.card-container hr {
+  border-top: 1px solid white;
 }/*# sourceMappingURL=style.css.map */

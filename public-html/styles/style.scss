@@ -80,14 +80,18 @@ body {
 }
 
 .card-container {
-    color: $colour1;
+    color: $colour6;
     font-family: $font;
-
+    
     .card {
         margin-bottom: 1rem;
+        background-color: $colour1;
     }
-
+    
     .card-title {
         font-weight: 700;
+    }
+    hr {
+        border-top: 1px solid $colour6;
     }
 }
