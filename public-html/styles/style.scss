@@ -21,10 +21,16 @@ body {
 }
 
 .bg-secondary-dark {
-    background-color: $colour3;
+    background-color: $colour6;
+    border: 1px solid $colour1
 
     a {
-        color: $colour6;
+        color: $colour1;
+    }
+    a:hover {
+        background-color: $colour1;
+        color: $colour6
+
     }
 }
 

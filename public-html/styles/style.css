@@ -8,9 +8,12 @@ body {
 }
 
 .bg-secondary-dark {
-  background-color: hsl(202deg, 70%, 26%);
+  background-color: white;
+  border: 1px solid hsl(208deg, 96%, 7%) a;
+  border-color: hsl(208deg, 96%, 7%);
 }
-.bg-secondary-dark a {
+.bg-secondary-dark a:hover {
+  background-color: hsl(208deg, 96%, 7%);
   color: white;
 }
 
