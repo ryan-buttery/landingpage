@@ -46,6 +46,21 @@ body {
     }
 }
 
+.btn-primary {
+    background-color: $colour2-T;
+    font-family: $font;
+    color: $colour6;
+    border-color: $colour6;
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    background-color: $colour2;
+    font-family: $font;
+    color: $colour6;
+    border-color: $colour6;
+}
+
 .hero-banner {
     margin-bottom: 2rem;
     background-color: $colour2;
@@ -54,19 +69,7 @@ body {
     font-family: $font;
     color: $colour6;
 
-    .btn-primary {
-        background-color: $colour2-T;
-        font-family: $font;
-        color: $colour6;
-        border-color: $colour6;
-    }
 
-    .btn-primary:hover {
-        background-color: $colour2;
-        font-family: $font;
-        color: $colour6;
-        border-color: $colour6;
-    }
 
     .display-4 {
         color: $colour6;
@@ -77,9 +80,7 @@ body {
         font-weight: 400;
     }
 
-    .btn-primary {
-        font-weight: 700;
-    }
+
 
     hr {
         border-top: 1px solid $colour6;
@@ -102,6 +103,7 @@ body {
                 border-top: 1px solid $colour1;
                 list-style-type: circle;
                 display:list-item;
+
                 list-style-position: inside;
             }
         }

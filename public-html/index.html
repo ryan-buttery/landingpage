@@ -102,46 +102,65 @@
         </div>
       </div>
 
-      <div class="col-sm-12 col-md-6 col-xl-4 card-group">
+      <div class="col-sm-12 col-md-6 col-xl-4 card-group" id="selected-projects-card">
         <div class="card text-center">
           <img class="card-img-top" src="./images/selected-projects-card-image.webp">
           <div class="card-body">
             <h5 class="card-title">Selected Projects</h5>
             <hr class="my-2">
-            <p class="card-text">This is a small selection of the projects I have BA'd, Project Managed, or have had an
-              engineering role in.
-              Please contact me if you'd like to know more.</p>
-            </div>
+            <p class="card-text" id="selected-projects-card-heading">This is a small selection of the projects I have
+              BA'd, Project Managed, or have had an
+              engineering role in. Please contact me if you'd like to know more.
+            </p>
+
+            <button class="btn btn-primary btn-large" data-toggle="collapse"
+              data-target="#selected-projects-collapse" aria-expanded="false"
+              aria-controls="selected-projects-collapse">
+              Show/Hide
+            </button>
+          </div>
+          <div id="selected-projects-collapse" class="collapse hide" aria-labelledby="selected-projects-card-heading"
+            data-parent="#selected-projects-card">
             <ul class="list-group list-group-flush">
               <li class="list-group-item">Plastic recycling plant data extraction and surfacing via dashboards and
                 tabulated reports</li>
-                <li class="list-group-item">Multisite CCTV and door access control installation</li>
-                <li class="list-group-item">Industrial site network/platform infrastructure outfitting</li>
-                <li class="list-group-item">Stock and production system in coordination with several third-parties</li>
-                <li class="list-group-item">Installation and integration of IOT sensors into our business reporting suite
-              (SSRS)</li>
+              <li class="list-group-item">Multisite CCTV and door access control installation</li>
+              <li class="list-group-item">Industrial site network/platform infrastructure outfitting</li>
+              <li class="list-group-item">Stock and production system in coordination with several third-parties</li>
+              <li class="list-group-item">Installation and integration of IOT sensors into our business reporting suite
+                (SSRS)</li>
             </ul>
           </div>
         </div>
-        
-        <div class="col-sm-12 col-md-6 col-xl-4 card-group">
-          <div class="card text-center">
-            <img class="card-img-top" src="./images/technologies-card-image.webp">
-            <div class="card-body">
-              <h5 class="card-title">Technologies</h5>
-              <hr class="my-2">
-              <p class="card-text">These are the technologies I'm familiar with, along with how I'd rate my ability in them.</p>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-xl-4 card-group" id="technologies-card">
+        <div class="card text-center">
+          <img class="card-img-top" src="./images/technologies-card-image.webp">
+          <div class="card-body">
+            <h5 class="card-title">Technologies</h5>
+            <hr class="my-2">
+            <p class="card-text" id="technologies-card-heading">
+              These are the technologies I'm familiar with, along with how I'd rate my ability in them.
+            </p>
+            <button class="btn btn-primary btn-large" data-toggle="collapse" data-target="#technologies-collapse"
+              aria-expanded="false" aria-controls="technologies-collapse">
+              Show/Hide
+            </button>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Python 3 - 8/10</li>
-            <li class="list-group-item">T-SQL - 7/10</li>
-            <li class="list-group-item">Network Infrastructure - 7/10</li>
-            <li class="list-group-item">Linux/Bash - 6/10</li>
-            <li class="list-group-item">HTML/CSS/SASS/Bootstrap - 5/10</li>
-            <li class="list-group-item">MongoDB - 4/10</li>
-            <li class="list-group-item">Flask - 3/10</li>
-            <li class="list-group-item">C#/dotnet - 3/10</li>
-          </ul>
+          <div id="technologies-collapse" class="collapse hide" aria-labelledby="technologies-card-heading"
+            data-parent="#technologies-card">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Python 3 - 8/10</li>
+              <li class="list-group-item">T-SQL - 7/10</li>
+              <li class="list-group-item">Network Infrastructure - 7/10</li>
+              <li class="list-group-item">Linux/Bash - 6/10</li>
+              <li class="list-group-item">HTML/CSS/SASS/Bootstrap - 5/10</li>
+              <li class="list-group-item">MongoDB - 4/10</li>
+              <li class="list-group-item">Flask - 3/10</li>
+              <li class="list-group-item">C#/dotnet - 3/10</li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -157,7 +176,7 @@
           </div>
         </div>
       </div>
-    <!--Card group end div-->
+      <!--Card group end div-->
     </div>
   </main>
   <!--Bootstrap Scripts-->
