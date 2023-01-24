@@ -68,6 +68,18 @@ body {
   margin-bottom: 1rem;
   background-color: hsl(208deg, 96%, 7%);
 }
+.card-container .card ul {
+  background-color: hsl(208deg, 96%, 7%);
+}
+.card-container .card ul li {
+  color: hsl(208deg, 96%, 7%);
+  background-color: white;
+  text-align: left;
+  border-top: 1px solid hsl(208deg, 96%, 7%);
+  list-style-type: circle;
+  display: list-item;
+  list-style-position: inside;
+}
 .card-container .card-title {
   font-weight: 700;
 }

@@ -93,6 +93,18 @@ body {
     .card {
         margin-bottom: 1rem;
         background-color: $colour1;
+        ul {
+            background-color: $colour1;
+            li {
+                color: $colour1;
+                background-color: $colour6;
+                text-align: left;
+                border-top: 1px solid $colour1;
+                list-style-type: circle;
+                display:list-item;
+                list-style-position: inside;
+            }
+        }
     }
     
     .card-title {
