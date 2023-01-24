@@ -60,6 +60,20 @@ body {
     color: $colour6;
     border-color: $colour6;
 }
+.btn-secondary {
+    background-color: $colour6;
+    font-family: $font;
+    color: $colour1;
+    border-color: $colour6;
+    font-weight: 700;
+}
+
+.btn-secondary:hover {
+    background-color: $colour1;
+    font-family: $font;
+    color: $colour6;
+    border-color: $colour6;
+}
 
 .hero-banner {
     margin-bottom: 2rem;

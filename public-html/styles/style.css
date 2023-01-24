@@ -41,6 +41,21 @@ body {
   border-color: white;
 }
 
+.btn-secondary {
+  background-color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  color: hsl(208deg, 96%, 7%);
+  border-color: white;
+  font-weight: 700;
+}
+
+.btn-secondary:hover {
+  background-color: hsl(208deg, 96%, 7%);
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  border-color: white;
+}
+
 .hero-banner {
   margin-bottom: 2rem;
   background-color: hsl(202deg, 89%, 51%);
