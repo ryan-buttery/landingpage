@@ -3,11 +3,18 @@
 <html lang="en">
 
 <head>
-
+  <!--Page setup-->
   <title>Home | ryanbuttery.co.uk</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="" />
+
+  <!--Meta Tags etc-->
+  <meta name="keywords"
+    content="personal profile, bio, career, contact info, linkedin, business analyst, english speaker, professional profile">
+  <meta name="description"
+    content="This is a personal profile page for Ryan Buttery. It includes information about his career, experience, skills, and contact information.">
+
   <!-- CSS -->
   <link rel="stylesheet" href="./styles/bootstrap.min.css">
   <link rel="stylesheet" href="./styles/style.css">
@@ -32,6 +39,7 @@
 </head>
 
 <body>
+  <!--Nav Bar Start-->
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand text-center align-middle" href="#"><img src="./images/logo.webp" class=""
@@ -40,7 +48,7 @@
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
+    <!--Left Icons-->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
@@ -48,19 +56,64 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://linkedin.com/in/ryanbuttery" data-toggle="tooltip" data-placement="bottom"
-            title="LinkedIn">LinkedIn</a>
+            title="Connect with me on LinkedIn!">LinkedIn</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://github.com/ryan-buttery" data-toggle="tooltip" data-placement="bottom"
-            title="Not that there's much on there... yet!">GitHub</a>
+            title="Check out my GitHub!">GitHub</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#about-modal" data-toggle="modal" data-target="#about-modal"
+            title="About this page...">About</a>
+          <!-- About Modal Start-->
+          <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="About Modal"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title" id="about-modal-label">About this website</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>© 2022-2023 Ryan Buttery</p>
+                  <p>
+                    This work is licensed under a <a rel="license"
+                      href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0
+                      International License</a>.</p>
+
+                  <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img
+                        alt="Creative Commons License" style="border-width:0"
+                        src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+
+                  </p>
+                  <p>Images, unless otherwise specified, were obtained from <br /><a
+                      href="https://unsplash.com/">Unsplash</a>
+                    and remain the property of their respective owners.
+                  </p>
+                  <p>The Website source code is available on my <a
+                      href="https://github.com/ryan-buttery/landingpage">Github</a></p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- About Modal End-->
+        </li>
+      </ul>
+      <!--Right Icons-->
+      <ul class="navbar-nav ml-auto">
         <!--Services Dropdown-->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Admin
           </a>
-          <div class="dropdown-menu bg-secondary-dark" aria-labelledby="navbarDropdownMenuLink">
+          <div class="dropdown-menu dropdown-menu-right bg-secondary-dark" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="https://proxy.ryanbuttery.co.uk">Nginx Proxy Manager</a>
             <a class="dropdown-item" href="http://infra.ryanbuttery.co.uk">Portainer</a>
             <a class="dropdown-item" href="https://bitwarden.ryanbuttery.co.uk">Bitwarden</a>
@@ -68,9 +121,12 @@
             <a class="dropdown-item" href="https://stats.uptimerobot.com/BXz4ocD750">Uptime Robot</a>
           </div>
         </li>
+
       </ul>
     </div>
   </nav>
+  <!--Nav Bar End-->
+
   <!--Hero & cta-->
   <header class="container mt-4 ">
     <div class="jumbotron hero-banner text-center">
@@ -87,108 +143,232 @@
   <main class="container card-container ">
     <div class="row">
 
-      <div class="col-sm-12 col-md-6 card-group" id="selected-projects-card">
+      <div class="col-sm-12 col-md-6 col-lg-4 card-group" id="ba-toolkit-card">
+        <div class="card text-center">
+          <img class="card-img-top" src="./images/ba-toolkit-card-image.webp">
+          <div class="card-body">
+            <h5 class="card-title">BA Skills and Frameworks</h5>
+            <hr class="my-2">
+            <p class="card-text" id="ba-toolkit-card-heading">Having worked in a projects team for over five years,
+              along with my <a href="#cert-modal" class="btn card-link" data-toggle="modal"
+                data-target="#cert-modal">Foundation Certificate in
+                Business Analysis</a> from the BCS - The Chartered Institute for IT, I have developed and applied a
+              wide range of BA skills in my goal of becoming a <b>T-Shaped Professional</b>. Click below to learn
+              more about my BA Skills.
+            </p>
+
+            <!--Certificate Modal Start-->
+            <div class="modal fade" id="cert-modal" tabindex="-1" role="dialog" aria-labelledby="Certificate Modal"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="cert-modal-label">Certificate Details</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>My certificate can be verified at <a href="https://eprofessional.bcs.org/Portal/eCertCheck">BCS
+                        eCertCheck</a>
+                      <br>
+                      Certificate Number: 00556840
+                      <br>
+                      Candidate Number: NY39339985
+                    </p>
+
+                    For more information about this certification, see the <a
+                      href="https://www.bcs.org/media/1944/ba-foundation-syllabus.pdf">official syllabus</a> or the <a
+                      href="https://www.bcs.org/qualifications-and-certifications/certifications-for-professionals/business-analysis/foundation-certificate-in-business-analysis/">BCS
+                      Website</a> for further details.
+
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Certificate Modal End-->
+
+          </div>
+          <div class="card-footer text-muted mx-auto">
+            <button class="btn btn-secondary btn-large" data-toggle="collapse" data-target="#ba-toolkit-collapse"
+              aria-expanded="false" aria-controls="ba-toolkit-collapse">
+              Show/Hide
+            </button>
+          </div>
+          <div id="ba-toolkit-collapse" class="collapse hide" aria-labelledby="ba-toolkit-card-heading"
+            data-parent="#ba-toolkit-card">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Using the <b>Requirements Engineering Framework</b> to gather, analyze,
+                verify, and document requirements</li>
+              <li class="list-group-item"><b>Performing MoSCoW analysis</b> to prioritize requirements and to ensure
+                they are aligned with the business strategy and tactics</li>
+              <li class="list-group-item"><b>Gathering User Stories</b> and enhancing them to provide sufficient detail
+                for development teams</li>
+              <li class="list-group-item"><b>Modeling the enterprise</b> using <em>VMOST</em>, <em>SIPOC</em>, and
+                <em>Value Chain Analysis</em>
+              </li>
+              <li class="list-group-item"><b>Modeling the event-response level</b> using <em>BPMN</em> and <em>UML</em>
+                process mapping techniques</li>
+              <li class="list-group-item"><b>Utilizing Convergent</b> and <b>Divergent thinking</b> to generate
+                <em>creative and feasible solutions</em> to business problems
+              </li>
+              <li class="list-group-item"><b>Modeling data structures</b> using <b>class diagrams</b>, backed up by my
+                own OOP experience</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-4 card-group" id="selected-projects-card">
         <div class="card text-center">
           <img class="card-img-top" src="./images/selected-projects-card-image.webp">
           <div class="card-body">
             <h5 class="card-title">Selected Projects</h5>
             <hr class="my-2">
             <p class="card-text" id="selected-projects-card-heading">This is a small selection of the projects I have
-              BA'd, Project Managed, or have had an
-              engineering role in. Please contact me if you'd like to know more.
+              delivered.
+              The majority of my projects have focused on <b>infrastructure, site security, and data extraction/surfacing</b> -
+              however I have also directly <b>managed the development backlog</b> for a 3rd party development team utilized by
+              my employer.
             </p>
-
-            <button class="btn btn-secondary btn-large" data-toggle="collapse"
-              data-target="#selected-projects-collapse" aria-expanded="false"
-              aria-controls="selected-projects-collapse">
+          </div>
+          <div class="card-footer text-muted mx-auto">
+            <button class="btn btn-secondary btn-large" data-toggle="collapse" data-target="#selected-projects-collapse"
+              aria-expanded="false" aria-controls="selected-projects-collapse">
               Show/Hide
             </button>
           </div>
           <div id="selected-projects-collapse" class="collapse hide" aria-labelledby="selected-projects-card-heading"
             data-parent="#selected-projects-card">
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Plastic recycling plant data extraction and surfacing via dashboards and
-                tabulated reports</li>
-              <li class="list-group-item">Multisite CCTV and door access control installation</li>
-              <li class="list-group-item">Industrial site network/platform infrastructure outfitting</li>
-              <li class="list-group-item">Stock and production system in coordination with several third-parties</li>
-              <li class="list-group-item">Installation and integration of IOT sensors into our business reporting suite
-                (SSRS)</li>
+              <li class="list-group-item"><b>Extraction of live sensor and production data</b> from two major recycling
+                plants using protocols such as MODBUS RTU/TCP, RS485, MQTT, and Profinet for the purposes of operational
+                monitoring,
+                preventative maintenance, and fault-finding. This
+                continually <b>saves the business 1000's of engineering hours and countless production stoppages per
+                  year</b> across all sites. Additional benefits such as <b>prolonging equipment lifespans</b> and
+                employee
+                moral are currently intangible.</li>
+              <li class="list-group-item"><b>Designing</b> and <b>deploying</b> an <b>integrated CCTV system across
+                  multiple disparate industrial sites</b> in
+                accordance with GDPR and other relevant laws. This has <b>
+                  prevented a number of legal challenges to the
+                  business
+                </b>, as well as <b>enhancing loss prevention around valuable products.</b>
+              </li>
+              <li class="list-group-item"><b>IT infrastructure installation for a new site</b>. Having gathered the
+                network and platform requirements from stakeholders, I worked hand-in-glove with the IT infrastructure
+                team to design and personally implement the required <b>LAN, WLAN, and fibre WAN solutions</b>. This
+                required <b>careful coordination with several 3rd party suppliers</b> to perform civil works and install
+                a FTTP link.</li>
+              <li class="list-group-item"><b>Several bespoke android applications</b> in conjunction with 3rd party
+                development resource. These have <b>replaced the usage of paper documents</b> throughout every
+                department, <b>
+                  saving multiple
+                  £100k's per year
+                </b> with the added benefit of making previously silo'd data trivial to <b>
+                  surface via
+                  tabulated reports and dashboards.
+                </b></li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div class="col-sm-12 col-md-6 card-group" id="technologies-card">
+      <div class="col-sm-12 col-md-6 col-lg-4 card-group" id="technologies-card">
         <div class="card text-center">
           <img class="card-img-top" src="./images/technologies-card-image.webp">
           <div class="card-body">
             <h5 class="card-title">Technologies</h5>
             <hr class="my-2">
             <p class="card-text" id="technologies-card-heading">
-              These are a small selection of technologies that I'm familiar with, along with how I'd rate my ability in them.
+              These are a small selection of the technologies that I'm familiar with, along with how I'd rate my ability in
+              them. Included are applications, programming languages, as well as frameworks and libraries. <b>I believe that a business analyst should have a wide breadth of knowledge.</b>
             </p>
-            <button class="btn btn-secondary btn-large" data-toggle="collapse" data-target="#technologies-collapse"
-              aria-expanded="false" aria-controls="technologies-collapse">
+          </div>
+          <div class="card-footer text-muted mx-auto">
+            <button class="btn btn-secondary btn-large align-self-end" data-toggle="collapse"
+              data-target="#technologies-collapse" aria-expanded="false" aria-controls="technologies-collapse">
               Show/Hide
             </button>
           </div>
           <div id="technologies-collapse" class="collapse hide" aria-labelledby="technologies-card-heading"
             data-parent="#technologies-card">
             <ul class="list-group list-group-flush">
+              <li class="list-group-item">IP CCTV - 9/10</li>
+              <li class="list-group-item">GIT- 9/10</li>
               <li class="list-group-item">Python 3 - 8/10</li>
-              <li class="list-group-item">T-SQL - 7/10</li>
-              <li class="list-group-item">Network Infrastructure - 7/10</li>
+              <li class="list-group-item">Network Infrastructure - 8/10</li>
+              <li class="list-group-item">Adonis & MS Visio - 8/10</li>
+              <li class="list-group-item">MS SQL Server & SQL Server Reporting Services- 7/10</li>
+              <li class="list-group-item">Raspberry Pi - 7/10</li>
+              <li class="list-group-item">GitHub - 7/10</li>
+              <li class="list-group-item">Tkinter (Python GUI Library) - 6/10</li>
+              <li class="list-group-item">Figma - 6/10</li>
+              <li class="list-group-item">Powershell - 6/10</li>
+              <li class="list-group-item">Docker & Docker-Compose - 6/10</li>
+              <li class="list-group-item">Cisco IOS - 6/10</li>
               <li class="list-group-item">Linux/Bash - 6/10</li>
+              <li class="list-group-item">Postman - 5/10</li>
               <li class="list-group-item">HTML/CSS/SASS/Bootstrap - 5/10</li>
               <li class="list-group-item">MongoDB - 4/10</li>
-              <li class="list-group-item">Flask - 3/10</li>
-              <li class="list-group-item">C#/dotnet - 3/10</li>
+              <li class="list-group-item">Flask (Creating REST API's) - 3/10</li>
+              <li class="list-group-item">C#/dotnet - 2/10</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div class="col-sm-12 col-md-6 card-group">
+      <div class="col-sm-12 col-md-6 col-lg-4 card-group" id="current-role-card">
         <div class="card text-center">
           <img class="card-img-top" src="./images/current-role-card-image.webp">
           <div class="card-body">
             <h5 class="card-title">Current Role</h5>
             <hr class="my-2">
-            <p class="card-text">I'm a Junior BA and acting team manager for a lean IT projects team at the recycling
+            <p class="card-text">I'm an <b>IT Business Analyst and acting team manager</b> for an IT projects team at the
+              recycling
               arm of a large UK-based online retailer.
-              As acting team manager, I've stepped up to the plate by managing my business unit's IT project portfolio,
-              and line in directly to the senior leadership team to ensure that our work aligns with the strategic
-              vision. </p>
+              As acting team manager, I've stepped up to the plate by <b>managing my business unit's IT project portfolio</b>,
+              and line in directly to the senior leadership team to <b>
+                ensure that our work aligns with the strategic
+                vision
+              </b>. Additionally, I serve as the business unit's point of contact for the group IT function, and work to mitigate the impact of servicing and outages on my stakeholders.</p>
           </div>
         </div>
       </div>
 
-      <div class="col-sm-12 col-md-6 card-group">
+      <div class="col-sm-12 col-md-6 col-lg-4 card-group" id="about-me-card">
         <div class="card text-center">
           <img class="card-img-top" src="./images/profile-card-image.webp" , alt="Image of Ryan">
           <div class="card-body">
             <h5 class="card-title">About me</h5>
             <hr class="my-2">
-            <p class="card-text ">I'm a jack-of-all-trades IT Business Analyst with a particular interest in
-              infrastructure and industrial hardware. In my spare time I enjoy programming, playing guitar, and
-              photography.</p>
+            <p class="card-text ">I've been a tech enthusiast all of my life.<br /> From <b>building my first computers</b> with my
+              Dad <b>as a kid</b>, to <b>hosting game servers</b> for my friends <b>as a teenager</b>, and in
+              recent times where I've <b>deployed personal projects in containers in the cloud</b>.
+              <br />
+             
+              In my spare time I enjoy <b>
+                programming, playing guitar, and
+                photography
+              </b>.
+              <br />
+              I also enjoy traveling with my partner, and learning about other cultures. <b>
+                I'm currently learning Polish
+                as a second
+                language.
+              </b> It's difficult, but I enjoy a challenge!
+            </p>
           </div>
         </div>
       </div>
       <!--Card group end div-->
     </div>
   </main>
-  <!--Bootstrap Scripts-->
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script> -->
+  <!--Javascript-->
   <script src="./scripts/jquery-3.3.1.slim.min.js"></script>
   <script src="./scripts/popper.min.js"></script>
   <script src="./scripts/bootstrap.min.js"></script>
