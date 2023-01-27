@@ -90,35 +90,6 @@ body {
   padding: 0;
   text-decoration: underline;
 }
-.card-container .card .modal .modal-header h2 {
-  font-size: 2.2vw;
-}
-.card-container .card .modal .modal-content {
-  background-color: hsl(208deg, 96%, 7%);
-}
-.card-container .card .modal .modal-content .btn-secondary {
-  padding: 0.5vw;
-  background-color: white;
-  font-family: "Source Sans Pro", sans-serif;
-  text-decoration: none;
-  color: hsl(208deg, 96%, 7%);
-  border-color: white;
-  font-weight: 700;
-  font-size: 1.2vw;
-}
-.card-container .card .modal .modal-content .btn-secondary:hover {
-  background-color: hsl(208deg, 96%, 7%);
-  font-family: "Source Sans Pro", sans-serif;
-  color: white;
-  border-color: white;
-}
-.card-container .card .modal .modal-content a {
-  color: hsl(202deg, 89%, 51%);
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  text-decoration: underline;
-}
 .card-container .card ul {
   background-color: hsl(208deg, 96%, 7%);
 }
@@ -136,4 +107,45 @@ body {
 }
 .card-container hr {
   border-top: 1px solid white;
+}
+
+.modal {
+  color: white;
+  text-align: center;
+}
+.modal .modal-header h2 {
+  font-size: 2.2vw;
+}
+.modal .close {
+  color: #fff;
+  opacity: 1;
+}
+.modal .modal-content {
+  background-color: hsl(208deg, 96%, 7%);
+}
+.modal .modal-content h3 {
+  font-size: 1.2vw;
+}
+.modal .modal-content .btn-secondary {
+  padding: 0.5vw;
+  background-color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
+  color: hsl(208deg, 96%, 7%);
+  border-color: white;
+  font-weight: 700;
+  font-size: 1.2vw;
+}
+.modal .modal-content .btn-secondary:hover {
+  background-color: hsl(208deg, 96%, 7%);
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  border-color: white;
+}
+.modal .modal-content a {
+  color: hsl(202deg, 89%, 51%);
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */

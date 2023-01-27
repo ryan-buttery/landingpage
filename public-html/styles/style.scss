@@ -119,43 +119,7 @@ body {
             }
         }
 
-        .modal {
-            .modal-header {
-                h2 {
-                    font-size: 2.2vw;
-                }
-            }
-
-            .modal-content {
-                background-color: $colour1;
-
-                .btn-secondary {
-                    padding: 0.5vw;
-                    background-color: $colour6;
-                    font-family: $font;
-                    text-decoration: none;
-                    color: $colour1;
-                    border-color: $colour6;
-                    font-weight: 700;
-                    font-size: 1.2vw;
-                }
-
-                .btn-secondary:hover {
-                    background-color: $colour1;
-                    font-family: $font;
-                    color: $colour6;
-                    border-color: $colour6;
-                }
-
-                a {
-                    color: $colour2;
-                    font-weight: 400;
-                    margin: 0;
-                    padding: 0;
-                    text-decoration: underline;
-                }
-            }
-        }
+        
 
         ul {
             background-color: $colour1;
@@ -179,5 +143,52 @@ body {
 
     hr {
         border-top: 1px solid $colour6;
+    }
+}
+.modal {
+    color: $colour6;
+    text-align: center;
+    .modal-header {
+        h2 {
+            font-size: 2.2vw;
+        }
+    }
+    
+    .close {
+        color: #fff; 
+        opacity: 1;
+    }
+    .modal-content {
+        background-color: $colour1;
+
+        h3 {
+            font-size: 1.2vw;
+        }
+
+        .btn-secondary {
+            padding: 0.5vw;
+            background-color: $colour6;
+            font-family: $font;
+            text-decoration: none;
+            color: $colour1;
+            border-color: $colour6;
+            font-weight: 700;
+            font-size: 1.2vw;
+        }
+
+        .btn-secondary:hover {
+            background-color: $colour1;
+            font-family: $font;
+            color: $colour6;
+            border-color: $colour6;
+        }
+
+        a {
+            color: $colour2;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+            text-decoration: underline;
+        }
     }
 }
