@@ -3,11 +3,16 @@
 <html lang="en">
 
 <head>
-
+  <!--Page setup-->
   <title>Home | ryanbuttery.co.uk</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="" />
+
+  <!--Meta Tags etc-->
+  <meta name="keywords" content="personal profile, bio, career, contact info, linkedin, business analyst, english speaker, professional profile">
+  <meta name="description" content="This is a personal profile page for Ryan Buttery. It includes information about his career, experience, skills, and contact information.">
+
   <!-- CSS -->
   <link rel="stylesheet" href="./styles/bootstrap.min.css">
   <link rel="stylesheet" href="./styles/style.css">
@@ -86,6 +91,35 @@
   <!--Main content, card grid-->
   <main class="container card-container ">
     <div class="row">
+
+      <div class="col-sm-12 col-md-6 col-lg-4 card-group" id="ba-toolkit-card">
+        <div class="card text-center">
+          <img class="card-img-top" src="./images/Placeholder.webp">
+          <div class="card-body">
+            <h5 class="card-title">BA Skills and Frameworks</h5>
+            <hr class="my-2">
+            <p class="card-text" id="ba-toolkit-card-heading">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, sit! Voluptatum, deserunt veritatis sint ipsam nobis illo mollitia cumque dolores aliquam ut odit nulla numquam iusto fugit perspiciatis odio fugiat!
+            </p>
+
+            <button class="btn btn-secondary btn-large" data-toggle="collapse"
+              data-target="#ba-toolkit-collapse" aria-expanded="false"
+              aria-controls="ba-toolkit-collapse">
+              Show/Hide
+            </button>
+          </div>
+          <div id="ba-toolkit-collapse" class="collapse hide" aria-labelledby="ba-toolkit-card-heading"
+            data-parent="#ba-toolkit-card">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Requirements Engineering Framework</li>
+              <li class="list-group-item">Modeling the enterprise using <em>VMOST</em>, <em>SIPOC</em>, and <em>Value Chain Analysis</em></li>
+              <li class="list-group-item">Industrial site network/platform infrastructure outfitting</li>
+              <li class="list-group-item">Stock and production system in coordination with several third-parties</li>
+              <li class="list-group-item">Installation and integration of IOT sensors into our business reporting suite
+                (SSRS)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
       <div class="col-sm-12 col-md-6 col-lg-4 card-group" id="selected-projects-card">
         <div class="card text-center">
