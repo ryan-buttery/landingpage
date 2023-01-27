@@ -83,6 +83,34 @@ body {
   margin-bottom: 1rem;
   background-color: hsl(208deg, 96%, 7%);
 }
+.card-container .card .card-body .btn {
+  color: white;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+}
+.card-container .card a {
+  overflow-wrap: break-word;
+}
+.card-container .card .modal .modal-content {
+  background-color: hsl(208deg, 96%, 7%);
+}
+.card-container .card .modal .modal-content .btn-secondary {
+  padding: 1vw;
+  background-color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
+  color: hsl(208deg, 96%, 7%);
+  border-color: white;
+  font-weight: 700;
+}
+.card-container .card .modal .modal-content .btn-secondary:hover {
+  background-color: hsl(208deg, 96%, 7%);
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  border-color: white;
+}
 .card-container .card ul {
   background-color: hsl(208deg, 96%, 7%);
 }

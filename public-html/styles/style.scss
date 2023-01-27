@@ -22,15 +22,14 @@ body {
 
 .bg-secondary-dark {
     background-color: $colour6;
-    border: 1px solid $colour1
 
-    a {
+    border: 1px solid $colour1 a {
         color: $colour1;
     }
+
     a:hover {
         background-color: $colour1;
         color: $colour6
-
     }
 }
 
@@ -60,6 +59,7 @@ body {
     color: $colour6;
     border-color: $colour6;
 }
+
 .btn-secondary {
     background-color: $colour6;
     font-family: $font;
@@ -104,28 +104,64 @@ body {
 .card-container {
     color: $colour6;
     font-family: $font;
-    
+
     .card {
         margin-bottom: 1rem;
         background-color: $colour1;
+
+        .card-body {
+            .btn {
+                color: $colour6;
+                font-weight: 600;
+                margin: 0;
+                padding: 0;
+                text-decoration: underline;
+            }
+        }
+        a {
+            overflow-wrap: break-word;
+        }
+        .modal {
+            .modal-content {
+                background-color: $colour1;
+                .btn-secondary {
+                    padding: 1vw;
+                    background-color: $colour6;
+                    font-family: $font;
+                    text-decoration: none;
+                    color: $colour1;
+                    border-color: $colour6;
+                    font-weight: 700;
+                }
+                
+                .btn-secondary:hover {
+                    background-color: $colour1;
+                    font-family: $font;
+                    color: $colour6;
+                    border-color: $colour6;
+                }
+            }
+        }
         ul {
             background-color: $colour1;
+
             li {
                 color: $colour1;
                 background-color: $colour6;
                 text-align: left;
                 border-top: 1px solid $colour1;
                 list-style-type: circle;
-                display:list-item;
+                display: list-item;
 
                 list-style-position: inside;
             }
         }
     }
-    
+
     .card-title {
         font-weight: 700;
     }
+
     hr {
         border-top: 1px solid $colour6;
     }
