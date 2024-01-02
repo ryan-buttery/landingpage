@@ -4,16 +4,16 @@ body {
 }
 
 .bg-dark {
-  background-color: hsl(208deg, 96%, 7%) !important;
+  background-color: hsl(208, 96%, 7%) !important;
 }
 
 .bg-secondary-dark {
   background-color: white;
-  border: 1px solid hsl(208deg, 96%, 7%) a;
-  border-color: hsl(208deg, 96%, 7%);
+  border: 1px solid hsl(208, 96%, 7%) a;
+  border-color: hsl(208, 96%, 7%);
 }
 .bg-secondary-dark a:hover {
-  background-color: hsl(208deg, 96%, 7%);
+  background-color: hsl(208, 96%, 7%);
   color: white;
 }
 
@@ -25,9 +25,12 @@ body {
   width: 2.5em;
   height: 2.5em;
 }
+.navbar .navbar-item .nav-link {
+  font-size: 1.2rem !important;
+}
 
 .btn-primary {
-  background-color: hsla(202deg, 89%, 51%, 0.65);
+  background-color: hsla(202, 89%, 51%, 0.65);
   font-family: "Source Sans Pro", sans-serif;
   color: white;
   border-color: white;
@@ -35,7 +38,7 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: hsl(202deg, 89%, 51%);
+  background-color: hsl(202, 89%, 51%);
   font-family: "Source Sans Pro", sans-serif;
   color: white;
   border-color: white;
@@ -44,13 +47,13 @@ body {
 .btn-secondary {
   background-color: white;
   font-family: "Source Sans Pro", sans-serif;
-  color: hsl(208deg, 96%, 7%);
+  color: hsl(208, 96%, 7%);
   border-color: white;
   font-weight: 700;
 }
 
 .btn-secondary:hover {
-  background-color: hsl(208deg, 96%, 7%);
+  background-color: hsl(208, 96%, 7%);
   font-family: "Source Sans Pro", sans-serif;
   color: white;
   border-color: white;
@@ -58,7 +61,7 @@ body {
 
 .hero-banner {
   margin-bottom: 2em;
-  background-color: hsl(202deg, 89%, 51%);
+  background-color: hsl(202, 89%, 51%);
   background: url("../images/hero.webp") no-repeat center center/cover;
   /* height: 300px; */
   font-family: "Source Sans Pro", sans-serif;
@@ -81,10 +84,10 @@ body {
 }
 .card-container .card {
   margin-bottom: 1em;
-  background-color: hsl(208deg, 96%, 7%);
+  background-color: hsl(208, 96%, 7%);
 }
 .card-container .card .card-body .card-link {
-  color: hsl(202deg, 89%, 51%);
+  color: hsl(202, 89%, 51%);
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -94,13 +97,13 @@ body {
   vertical-align: baseline;
 }
 .card-container .card ul {
-  background-color: hsl(208deg, 96%, 7%);
+  background-color: hsl(208, 96%, 7%);
 }
 .card-container .card ul li {
-  color: hsl(208deg, 96%, 7%);
+  color: hsl(208, 96%, 7%);
   background-color: white;
   text-align: left;
-  border-top: 1px solid hsl(208deg, 96%, 7%);
+  border-top: 1px solid hsl(208, 96%, 7%);
   list-style-type: circle;
   display: list-item;
   list-style-position: inside;
@@ -124,26 +127,26 @@ body {
   opacity: 1;
 }
 .modal .modal-content {
-  background-color: hsl(208deg, 96%, 7%);
+  background-color: hsl(208, 96%, 7%);
 }
 .modal .modal-content .btn-secondary {
   padding: 0.5em;
   background-color: white;
   font-family: "Source Sans Pro", sans-serif;
   text-decoration: none;
-  color: hsl(208deg, 96%, 7%);
+  color: hsl(208, 96%, 7%);
   border-color: white;
   font-weight: 700;
   font-size: 1em;
 }
 .modal .modal-content .btn-secondary:hover {
-  background-color: hsl(208deg, 96%, 7%);
+  background-color: hsl(208, 96%, 7%);
   font-family: "Source Sans Pro", sans-serif;
   color: white;
   border-color: white;
 }
 .modal .modal-content a {
-  color: hsl(202deg, 89%, 51%);
+  color: hsl(202, 89%, 51%);
   font-weight: 400;
   margin: 0;
   padding: 0;
