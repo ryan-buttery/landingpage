@@ -81,6 +81,17 @@ body {
     border-color: $color6;
 }
 
+.dropdown-menu-header {
+    margin-bottom: 0.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: center;
+    font-family: $font;
+    font-size: large;
+    background-color: $color1;
+    color: $color6;
+}
+
 .hero-banner {
     margin-bottom: 2em;
     background-color: $color2;

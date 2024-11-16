@@ -1,0 +1,26 @@
+{
+    "name": "Ryan Buttery Profile",
+    "short_name": "Ryan Profile",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#011323",
+    "icons": [
+        {
+            "src": "./images/favicon/android-icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "./images/favicon/apple-icon-180x180.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/favicon/splash-620x620.png",
+            "sizes": "620x620",
+            "type": "image/png"
+        }
+    ]
+}
