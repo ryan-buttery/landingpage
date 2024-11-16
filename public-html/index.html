@@ -7,6 +7,9 @@
   <title>Home | ryanbuttery.co.uk</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- PWA Setup -->
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="011323"/>
 
   <!--Meta Tags etc-->
   <meta name="description"
@@ -395,6 +398,18 @@
   <script src="./scripts/jquery-3.3.1.slim.min.js"></script>
   <script src="./scripts/popper.min.js"></script>
   <script src="./scripts/bootstrap.min.js"></script>
+  <script>if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker
+        .register('/public-html/service-worker.js')
+        .then((registration) => {
+          console.log('Service Worker registered with scope:', registration.scope);
+        })
+        .catch((error) => {
+          console.error('Service Worker registration failed:', error);
+        });
+    });
+  }</script>
 </body>
 
 </html>
