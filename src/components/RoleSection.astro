@@ -1,0 +1,17 @@
+---
+import SectionHeading from './SectionHeading.astro';
+
+interface Props {
+  title: string;
+  body: string;
+}
+
+const { title, body } = Astro.props;
+---
+
+<section id="role" class="bg-gray-50 py-16 px-4">
+  <div class="mx-auto max-w-3xl text-center">
+    <SectionHeading title={title} />
+    <p class="mt-8 leading-relaxed text-navy/80" set:html={body} />
+  </div>
+</section>

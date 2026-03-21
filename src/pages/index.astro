@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import AboutSection from '../components/AboutSection.astro';
+import RoleSection from '../components/RoleSection.astro';
+import SkillsSection from '../components/SkillsSection.astro';
+import ProjectsSection from '../components/ProjectsSection.astro';
+import TechnologiesSection from '../components/TechnologiesSection.astro';
+import Footer from '../components/Footer.astro';
+import content from '../data/content.json';
+
+const { cards, baSkills, projects, technologies, about } = content;
+---
+
+<Layout>
+  <Navbar />
+  <Hero />
+
+  <AboutSection
+    title={cards.aboutMe.title}
+    body={cards.aboutMe.body}
+    image={cards.aboutMe.image}
+    imageAlt={cards.aboutMe.imageAlt}
+  />
+
+  <RoleSection
+    title={cards.currentRole.title}
+    body={cards.currentRole.body}
+  />
+
+  <SkillsSection
+    title={baSkills.title}
+    intro={baSkills.intro}
+    certificate={baSkills.certificate}
+    skills={baSkills.skills}
+  />
+
+  <ProjectsSection
+    title={projects.title}
+    intro={projects.intro}
+    items={projects.items}
+  />
+
+  <TechnologiesSection
+    title={technologies.title}
+    intro={technologies.intro}
+    items={technologies.items}
+  />
+
+  <Footer
+    copyright={about.copyright}
+    license={about.license}
+    sourceCode={about.sourceCode}
+  />
+</Layout>

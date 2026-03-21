@@ -1,0 +1,56 @@
+---
+import SectionHeading from './SectionHeading.astro';
+
+interface Props {
+  title: string;
+  intro: string;
+  items: { name: string; rating: number }[];
+}
+
+const { title, intro, items } = Astro.props;
+---
+
+<section id="technologies" class="py-16 px-4">
+  <div class="mx-auto max-w-3xl">
+    <SectionHeading title={title} />
+    <p class="mt-8 text-center leading-relaxed text-navy/80" set:html={intro} />
+    <div id="tech-bars" class="mt-10 space-y-4">
+      {items.map((tech) => (
+        <div class="flex items-center gap-4">
+          <span class="w-48 shrink-0 text-sm font-medium text-navy">{tech.name}</span>
+          <div class="h-3 flex-1 overflow-hidden rounded-full bg-navy/10">
+            <div
+              class="tech-bar h-full rounded-full bg-gradient-to-r from-sky to-teal transition-all duration-1000 ease-out"
+              data-width={`${tech.rating * 10}%`}
+              style="width: 0%"
+            />
+          </div>
+          <span class="w-12 text-right text-sm font-semibold text-navy">{tech.rating}/10</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  const container = document.getElementById('tech-bars');
+  if (container) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const bars = container.querySelectorAll('.tech-bar') as NodeListOf<HTMLElement>;
+            bars.forEach((bar, i) => {
+              setTimeout(() => {
+                bar.style.width = bar.dataset.width || '0%';
+              }, i * 60);
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    observer.observe(container);
+  }
+</script>
