@@ -1,0 +1,24 @@
+---
+interface Props {
+  copyright: string;
+  license: {
+    name: string;
+    url: string;
+  };
+  sourceCode: string;
+}
+
+const { copyright, license, sourceCode } = Astro.props;
+---
+
+<footer class="bg-navy py-10 text-center text-sm text-white/70">
+  <p>&copy; {copyright}</p>
+  <p class="mt-2">
+    Licensed under
+    <a href={license.url} class="text-sky underline hover:text-sky/80">{license.name}</a>
+  </p>
+  <p class="mt-1">
+    Images from <a href="https://unsplash.com/" class="text-sky underline hover:text-sky/80">Unsplash</a> unless otherwise specified.
+    Source on <a href={sourceCode} class="text-sky underline hover:text-sky/80">GitHub</a>.
+  </p>
+</footer>

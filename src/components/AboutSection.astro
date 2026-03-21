@@ -1,0 +1,31 @@
+---
+import SectionHeading from './SectionHeading.astro';
+
+interface Props {
+  title: string;
+  body: string;
+  image: string;
+  imageAlt: string;
+}
+
+const { title, body, image, imageAlt } = Astro.props;
+---
+
+<section id="about" class="py-16 px-4">
+  <div class="mx-auto max-w-5xl">
+    <SectionHeading title={title} />
+    <div class="mt-10 items-center gap-12 md:grid md:grid-cols-5">
+      <div class="md:col-span-2">
+        <img
+          src={image}
+          alt={imageAlt}
+          class="mx-auto w-64 rounded-2xl shadow-lg md:w-full"
+          loading="lazy"
+        />
+      </div>
+      <div class="mt-8 text-center md:col-span-3 md:mt-0 md:text-left">
+        <p class="leading-relaxed text-navy/80" set:html={body} />
+      </div>
+    </div>
+  </div>
+</section>
