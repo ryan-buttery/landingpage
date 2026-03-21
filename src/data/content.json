@@ -1,0 +1,133 @@
+{
+  "site": {
+    "title": "Home | ryanbuttery.co.uk",
+    "description": "This is a personal profile page for Ryan Buttery. It includes information about his career, experience, skills, and contact information.",
+    "keywords": "personal profile, bio, career, contact info, linkedin, business analyst, english speaker, professional profile",
+    "themeColor": "#011323"
+  },
+
+  "nav": {
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Role", "href": "#role" },
+      { "label": "Skills", "href": "#skills" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Technologies", "href": "#technologies" }
+    ],
+    "socialLinks": [
+      { "label": "LinkedIn", "href": "https://linkedin.com/in/ryanbuttery" },
+      { "label": "GitHub", "href": "https://github.com/ryan-buttery" }
+    ],
+    "webApps": [
+      { "label": "Thunderdome - Planning Poker & Retro Boards", "href": "https://pp.ryanbuttery.co.uk" },
+      { "label": "SearXNG - Privacy-Focused Search Engine", "href": "https://search.ryanbuttery.co.uk" },
+      { "label": "FlashPaper - Self-Destructing Messages", "href": "https://flashpaper.ryanbuttery.co.uk" },
+      { "label": "Status Page", "href": "https://uptime.ryanbuttery.co.uk/status/uptime-dashboard" }
+    ],
+    "admin": {
+      "management": [
+        { "label": "Uptime Kuma", "href": "https://uptime.ryanbuttery.co.uk/manage-status-page" },
+        { "label": "Nginx Proxy Manager", "href": "https://proxy.ryanbuttery.co.uk" },
+        { "label": "Portainer", "href": "http://infra.ryanbuttery.co.uk" }
+      ],
+      "personal": [
+        { "label": "Vaultwarden - Self Hosted Password Manager", "href": "https://bitwarden.ryanbuttery.co.uk" },
+        { "label": "Yourls - URL Shortener", "href": "https://rdb93.uk/admin" },
+        { "label": "Siyuan - Personal Knowledge Base", "href": "https://wiki.ryanbuttery.co.uk" },
+        { "label": "Nextcloud - Online Office Platform", "href": "https://nextcloud.ryanbuttery.co.uk/" }
+      ]
+    }
+  },
+
+  "hero": {
+    "heading": "Hello there!",
+    "subtitle": "I'm Ryan, an IT Business Analyst from the UK with a passion for all things tech.",
+    "cta": {
+      "text": "Have an interesting project coming up?",
+      "buttonLabel": "Get in touch",
+      "buttonHref": "https://linkedin.com/in/ryanbuttery"
+    }
+  },
+
+  "cards": {
+    "aboutMe": {
+      "title": "About me",
+      "image": "/images/profile-card-image.webp",
+      "imageAlt": "Image of Ryan",
+      "body": "I've been a tech enthusiast all of my life. From <strong>building my first computers</strong> with my Dad <strong>as a kid</strong>, to <strong>hosting game servers</strong> for my friends <strong>as a teenager</strong>, and in recent times where I've <strong>deployed personal projects in containers in the cloud</strong>.<br/><br/>In my spare time I enjoy <strong>programming, playing guitar, and spending time in nature</strong>.<br/><br/>I also enjoy traveling with my partner, and learning about other cultures. <strong>I'm currently learning Polish as a second language.</strong> It's difficult, but I enjoy a challenge!"
+    },
+    "currentRole": {
+      "title": "Current Role",
+      "image": "/images/current-role-card-image.webp",
+      "body": "I'm an <strong>IT Business Analyst</strong> for a major Polish IT consultancy firm.<br/>As a <strong>Scrum Master and BA</strong>, I help to bridge the gap between clients and all members of the scrum team by understanding the languages of both business and tech.<br/><br/>This enables me to ensure that my clients receive the functionality that they actually need.<br/><br/>I work tirelessly to <strong>promote a positive culture</strong> within the team, and provide support using the SLII management framework."
+    }
+  },
+
+  "baSkills": {
+    "title": "BA Skills and Frameworks",
+    "image": "/images/ba-toolkit-card-image.webp",
+    "intro": "Having worked in IT projects for over seven years, along with my Foundation Certificate in Business Analysis from the BCS - The Chartered Institute for IT, I have developed and applied a wide range of BA skills in my goal of becoming a <strong>T-Shaped Professional</strong>.",
+    "certificate": {
+      "verifyUrl": "https://eprofessional.bcs.org/Portal/eCertCheck",
+      "certificateNumber": "00556840",
+      "candidateNumber": "NY39339985",
+      "syllabusUrl": "https://www.bcs.org/media/1944/ba-foundation-syllabus.pdf",
+      "bcsUrl": "https://www.bcs.org/qualifications-and-certifications/certifications-for-professionals/business-analysis/foundation-certificate-in-business-analysis/"
+    },
+    "skills": [
+      "Experienced <strong>scrum master</strong>, facilitating <strong>fast and efficient ceremonies</strong> that stay on topic. I support my team using the SLII management framework, to make sure everyone has precisely the level of support they need to grow.",
+      "Proficient with <strong>industry standard tools</strong>, including Jira (inc. JQL), Confluence, Sharepoint, Slack, etc.",
+      "Using the <strong>Requirements Engineering Framework</strong> to gather, analyze, verify, and document requirements",
+      "<strong>Performing MoSCoW analysis</strong> to prioritize requirements and to ensure they are aligned with the business strategy and tactics",
+      "<strong>Gathering User Stories</strong> and enhancing them to provide sufficient detail for development teams",
+      "<strong>Modeling the enterprise</strong> using <em>VMOST</em>, <em>SIPOC</em>, and <em>Value Chain Analysis</em>",
+      "<strong>Modeling the event-response level</strong> using <em>BPMN</em> and <em>UML</em> process mapping techniques",
+      "<strong>Utilizing Convergent</strong> and <strong>Divergent thinking</strong> to generate <em>creative and feasible solutions</em> to business problems"
+    ]
+  },
+
+  "projects": {
+    "title": "Selected Projects",
+    "image": "/images/selected-projects-card-image.webp",
+    "intro": "This is a small selection of the projects I have delivered. I have been involved with projects across both London Market insurance and heavy industrial sectors.",
+    "items": [
+      "<strong>Major Lloyd's Syndicate Client (Ongoing):</strong> Guidewire Cloud Platform upgrade, \"lift-and-shift\" of existing ClaimCenter 9 implementation to the cloud.",
+      "<strong>Major Lloyd's Syndicate Client:</strong> Maintenance and BAU changes to Guidewire ClaimCenter 9, working on both the London Market ECF writeback integration as well as integrations with a legal vendor management platform and internal FTS system.",
+      "<strong>Extraction of live sensor and production \"big data\"</strong> from two major recycling plants using protocols such as MODBUS RTU/TCP, RS485, MQTT, and Profinet for the purposes of operational monitoring, preventative maintenance, and fault-finding. This continually <strong>saves the business 1000's of engineering hours and countless production stoppages per year</strong> across all sites.",
+      "<strong>Several bespoke android applications</strong> in conjunction with 3rd party development resource. These have <strong>replaced the usage of paper documents</strong> throughout every department, <strong>saving multiple £100k's per year</strong> with the added benefit of making previously silo'd data trivial to <strong>surface via tabulated reports and dashboards.</strong>",
+      "<strong>Designing</strong> and <strong>deploying</strong> an <strong>integrated CCTV system across multiple disparate industrial sites</strong> in accordance with GDPR and other relevant laws. This has <strong>prevented a number of legal challenges to the business</strong>, as well as <strong>enhancing loss prevention around valuable products.</strong>",
+      "<strong>IT infrastructure installation for a new site</strong>. Having gathered the network and platform requirements from stakeholders, I worked hand-in-glove with the IT infrastructure team to design and personally implement the required <strong>LAN, WLAN, and fibre WAN solutions</strong>."
+    ]
+  },
+
+  "technologies": {
+    "title": "Technologies",
+    "image": "/images/technologies-card-image.webp",
+    "intro": "These are a small selection of the technologies that I'm familiar with, along with how I'd rate my ability in them. <strong>I believe that a business analyst should have a wide breadth of knowledge.</strong>",
+    "items": [
+      { "name": "Jira & Confluence", "rating": 10 },
+      { "name": "Guidewire ClaimCenter", "rating": 10 },
+      { "name": "GIT", "rating": 9 },
+      { "name": "Python", "rating": 8 },
+      { "name": "Camunda, Adonis & MS Visio", "rating": 8 },
+      { "name": "MS SQL Server & SSRS", "rating": 7 },
+      { "name": "GitHub/Gitlab", "rating": 7 },
+      { "name": "Postman & SOAPUI", "rating": 6 },
+      { "name": "Docker & Docker-Compose", "rating": 6 },
+      { "name": "Linux/Bash", "rating": 6 },
+      { "name": "Figma", "rating": 6 },
+      { "name": "Powershell", "rating": 6 },
+      { "name": "HTML/CSS/SASS/Bootstrap", "rating": 5 }
+    ]
+  },
+
+  "about": {
+    "copyright": "2022-2026 Ryan Buttery",
+    "license": {
+      "name": "Creative Commons Attribution-ShareAlike 4.0 International License",
+      "url": "http://creativecommons.org/licenses/by-sa/4.0/",
+      "badge": "https://i.creativecommons.org/l/by-sa/4.0/88x31.png"
+    },
+    "sourceCode": "https://github.com/ryan-buttery/landingpage"
+  }
+}

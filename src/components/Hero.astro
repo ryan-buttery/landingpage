@@ -1,0 +1,53 @@
+---
+import content from '../data/content.json';
+
+const { heading, subtitle, cta } = content.hero;
+---
+
+<header
+  id="hero"
+  class="bg-cover bg-center text-center text-white"
+  style="background-image: linear-gradient(rgba(1,19,35,0.6), rgba(1,19,35,0.6)), url('/images/hero.webp');"
+>
+  <div class="mx-auto max-w-3xl px-4 py-24 md:py-32">
+    <h1 class="text-5xl font-bold md:text-7xl">
+      <span id="typed-heading" class="inline-block"></span>
+      <span id="typed-cursor" class="inline-block w-[3px] animate-blink bg-white align-middle md:h-16 h-10"></span>
+    </h1>
+    <div id="hero-content" class="opacity-0 transition-opacity duration-700">
+      <p class="mx-auto mt-6 max-w-2xl text-lg md:text-xl">{subtitle}</p>
+      <hr class="mx-auto my-8 w-24 border-white/40" />
+      <h2 class="text-2xl font-semibold">{cta.text}</h2>
+      <a
+        href={cta.buttonHref}
+        class="mt-8 inline-block rounded-lg bg-gradient-to-r from-sky to-teal px-10 py-4 text-lg font-bold text-white shadow-md transition-all hover:shadow-lg hover:brightness-110"
+      >
+        {cta.buttonLabel}
+      </a>
+    </div>
+  </div>
+</header>
+
+<script define:vars={{ heading }}>
+  const el = document.getElementById('typed-heading');
+  const cursor = document.getElementById('typed-cursor');
+  const heroContent = document.getElementById('hero-content');
+  let i = 0;
+
+  function type() {
+    if (i < heading.length) {
+      el.textContent += heading[i];
+      i++;
+      setTimeout(type, 80);
+    } else {
+      // Typing done — fade in the rest and stop cursor blinking
+      setTimeout(() => {
+        heroContent?.classList.remove('opacity-0');
+        cursor?.classList.add('opacity-0');
+      }, 400);
+    }
+  }
+
+  // Small delay before starting
+  setTimeout(type, 500);
+</script>
